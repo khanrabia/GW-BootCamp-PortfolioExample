@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabia Khan — Software Engineer | Certified Scrum Master | Business Technical Trainer</title>
+    
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS Engine -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emeraldDeep: '#0B2B26',
+                        emeraldDarker: '#061C19',
+                        ivoryWarm: '#F9F8F3',
+                        charcoal: '#121414',
+                        goldChampagne: '#D4AF37',
+                        sageSoft: '#A3B18A',
+                        sageLight: '#E8ECE1',
+                        borderMuted: '#E2E5DA'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-ivoryWarm text-charcoal font-sans antialiased selection:bg-goldChampagne selection:text-emeraldDeep min-h-screen flex flex-col justify-between">
+
+    <!-- Persistent Header Navigation -->
+    <header class="sticky top-0 z-50 bg-ivoryWarm/90 backdrop-blur-md border-b border-borderMuted transition-all duration-300" id="mainHeader">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#hero" class="group flex items-center gap-3 text-emeraldDeep font-serif font-bold text-2xl tracking-widest uppercase">
+                <span class="w-10 h-10 rounded-full border border-goldChampagne/60 flex items-center justify-center text-goldChampagne text-sm group-hover:bg-emeraldDeep group-hover:text-ivoryWarm transition-all duration-300">RK</span>
+                <span class="tracking-widest group-hover:text-goldChampagne transition-colors">Rabia Khan</span>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
+                <a href="#about" class="nav-link hover:text-goldChampagne transition-colors py-1 border-b-2 border-transparent">About</a>
+                <a href="#journey" class="nav-link hover:text-goldChampagne transition-colors py-1 border-b-2 border-transparent">Career Evolution</a>
+                <a href="#experience" class="nav-link hover:text-goldChampagne transition-colors py-1 border-b-2 border-transparent">Experience</a>
+                <a href="#skills" class="nav-link hover:text-goldChampagne transition-colors py-1 border-b-2 border-transparent">Competencies</a>
+                <a href="#education" class="nav-link hover:text-goldChampagne transition-colors py-1 border-b-2 border-transparent">Education</a>
+            </nav>
+
+            <div class="hidden md:block">
+                <a href="#contact" class="px-6 py-2.5 text-xs font-semibold uppercase tracking-widest text-emeraldDeep border border-emeraldDeep/30 rounded-full hover:bg-emeraldDeep hover:text-ivoryWarm transition-all duration-300">
+                    Get in Touch
+                </a>
+            </div>
+
+            <button id="mobileMenuBtn" aria-label="Toggle Navigation Menu" class="md:hidden text-emeraldDeep focus:outline-none p-2">
+                <i class="fa-solid fa-bars text-2xl" id="menuIcon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden bg-ivoryWarm border-b border-borderMuted px-6 py-6 space-y-4 shadow-lg transition-all">
+            <a href="#about" class="mobile-nav-item block text-base font-medium text-emeraldDeep py-2 border-b border-borderMuted">About</a>
+            <a href="#journey" class="mobile-nav-item block text-base font-medium text-emeraldDeep py-2 border-b border-borderMuted">Career Evolution</a>
+            <a href="#experience" class="mobile-nav-item block text-base font-medium text-emeraldDeep py-2 border-b border-borderMuted">Experience</a>
+            <a href="#skills" class="mobile-nav-item block text-base font-medium text-emeraldDeep py-2 border-b border-borderMuted">Competencies</a>
+            <a href="#education" class="mobile-nav-item block text-base font-medium text-emeraldDeep py-2 border-b border-borderMuted">Education</a>
+            <a href="#contact" class="mobile-nav-item block text-center w-full mt-4 px-6 py-3 bg-emeraldDeep text-ivoryWarm font-semibold text-xs uppercase tracking-widest rounded-full">Contact Rabia</a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+
+        <!-- Hero Section -->
+        <section id="hero" class="py-16 md:py-24 px-6 max-w-7xl mx-auto border-b border-borderMuted">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+                <div class="lg:col-span-7 space-y-8">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sageLight text-emeraldDeep text-xs font-semibold tracking-wider uppercase border border-sageSoft/40">
+                        <span class="w-2 h-2 rounded-full bg-goldChampagne animate-pulse"></span>
+                        New York, NY • khan.rab34@gmail.com
+                    </div>
+
+                    <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-emeraldDeep leading-tight tracking-tight font-bold">
+                        Software Engineer | Certified Scrum Master | Business Technical Trainer
+                    </h1>
+
+                    <p class="text-base md:text-lg text-charcoal/80 font-light max-w-2xl leading-relaxed">
+                        Combining software engineering, business reporting, data analysis, and cross-functional collaboration to improve operational outcomes. Skilled in translating business needs into technical solutions, supporting Agile delivery, and driving continuous improvement.
+                    </p>
+
+                    <div class="flex flex-wrap items-center gap-4 pt-2">
+                        <a href="#experience" class="inline-flex items-center justify-center gap-3 px-7 py-3.5 bg-emeraldDeep text-ivoryWarm font-medium text-sm tracking-wide rounded-lg shadow-md hover:bg-emeraldDarker transition-all hover:translate-y-[-2px]">
+                            <span>Explore Experience</span>
+                            <i class="fa-solid fa-arrow-right text-goldChampagne text-xs"></i>
+                        </a>
+
+                        <a href="mailto:khan.rab34@gmail.com" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-transparent border border-emeraldDeep/30 text-emeraldDeep font-medium text-sm tracking-wide rounded-lg hover:border-emeraldDeep hover:bg-emeraldDeep/5 transition-all">
+                            <i class="fa-solid fa-envelope text-emeraldDeep text-xs"></i>
+                            <span>Direct Email</span>
+                        </a>
+
+                        <a href="tel:9292728730" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-transparent border border-emeraldDeep/30 text-emeraldDeep font-medium text-sm tracking-wide rounded-lg hover:border-emeraldDeep hover:bg-emeraldDeep/5 transition-all">
+                            <i class="fa-solid fa-phone text-emeraldDeep text-xs"></i>
+                            <span>929-272-8730</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Executive Summary Box -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-ivoryWarm bg-emeraldDeep p-8 text-ivoryWarm space-y-6">
+
+                        <div class="flex items-center gap-3 border-b border-goldChampagne/30 pb-4">
+                            <!-- <div class="w-12 h-12 rounded-xl bg-goldChampagne/20 flex items-center justify-center text-goldChampagne text-xl">
+                                <img src="assets/699DC9B7-0468-4435-BC2D-B04EBDE0B66B_1_105_c.jpeg">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div> -->
+                            <div>
+                                <h2 class="font-serif text-xl font-bold text-ivoryWarm">Professional Snapshot</h2>
+                                <p class="text-xs text-sageLight">Cross-Functional Agile & Software Leader</p>
+                            </div>
+                            
+                        </div>
+
+                        
+
+                        <div class="space-y-4 text-xs font-light leading-relaxed">
+
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-goldChampagne mt-1"></i>
+                                <div>
+                                    <strong class="text-ivoryWarm font-semibold">Agile Delivery:</strong>
+                                    Certified Scrum Master (Scrum Alliance) facilitating sprint ceremonies, backlog grooming, and workflow optimizations.
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-goldChampagne mt-1"></i>
+                                <div>
+                                    <strong class="text-ivoryWarm font-semibold">Engineering Foundations:</strong>
+                                    React, JavaScript, Node.js, REST APIs, HTML/CSS, PostgreSQL, Docker, AWS, & CI/CD workflows.
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-goldChampagne mt-1"></i>
+                                <div>
+                                    <strong class="text-ivoryWarm font-semibold">Data & Analytics:</strong>
+                                    Google Analytics, Excel reporting, KPI tracking, and metric analysis for data-driven decisions.
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-goldChampagne mt-1"></i>
+                                <div>
+                                    <strong class="text-ivoryWarm font-semibold">Technical Empowerment:</strong>
+                                    Training cohorts of 42+ professionals, mentoring underrepresented talent, and building documentation.
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="pt-2 border-t border-goldChampagne/30 flex justify-between items-center text-xs text-sageLight">
+                            <span>
+                                <i class="fa-solid fa-location-dot text-goldChampagne mr-1"></i>
+                                New York, NY
+                            </span>
+
+                            <span class="px-3 py-1 bg-goldChampagne/20 text-goldChampagne rounded-full font-semibold">
+                                CSM Certified
+                            </span>
+                        </div>
+
+                    </div>
+                
+                </div>
+                
+
+            </div>
+        </section>
+
+        <!-- Career Evolution Section -->
+        <section id="journey" class="py-20 px-6 max-w-7xl mx-auto border-b border-borderMuted">
+
+            <div class="max-w-3xl mb-12">
+                <span class="text-xs font-semibold uppercase tracking-widest text-goldChampagne">
+                    Career Progression
+                </span>
+
+                <h2 class="font-serif text-3xl sm:text-4xl text-emeraldDeep mt-2 font-bold">
+                    Bridging Software, Strategy & Leadership
+                </h2>
+
+                <p class="text-charcoal/70 mt-3 font-light leading-relaxed">
+                    A multi-faceted career path built on core engineering principles, scaled through Agile delivery leadership, data analytics, and tech workforce development.
+                </p>
+            </div>
+
+            <div class="relative mt-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-3 relative z-10" id="timelineNodes">
+
+                    <button data-stage="1" class="stage-btn active text-left p-4 rounded-xl border-2 border-goldChampagne bg-ivoryWarm shadow-sm transition-all duration-300">
+                        <div class="flex items-center gap-3 md:block">
+                            <span class="w-8 h-8 rounded-full bg-emeraldDeep text-goldChampagne text-xs font-bold flex items-center justify-center mb-0 md:mb-2">01</span>
+                            <div>
+                                <h3 class="text-xs font-bold text-emeraldDeep uppercase">Software Eng.</h3>
+                                <p class="text-[11px] text-charcoal/60">Weight Watchers</p>
+                            </div>
+                        </div>
+                    </button>
+
+                    <button data-stage="2" class="stage-btn text-left p-4 rounded-xl border border-borderMuted bg-ivoryWarm hover:border-goldChampagne/50 transition-all duration-300">
+                        <div class="flex items-center gap-3 md:block">
+                            <span class="w-8 h-8 rounded-full bg-sageLight text-emeraldDeep text-xs font-bold flex items-center justify-center mb-0 md:mb-2">02</span>
+                            <div>
+                                <h3 class="text-xs font-bold text-emeraldDeep uppercase">Scrum Master</h3>
+                                <p class="text-[11px] text-charcoal/60">P1Games</p>
+                            </div>
+                        </div>
+                    </button>
+
+                    <button data-stage="3" class="stage-btn text-left p-4 rounded-xl border border-borderMuted bg-ivoryWarm hover:border-goldChampagne/50 transition-all duration-300">
+                        <div class="flex items-center gap-3 md:block">
+                            <span class="w-8 h-8 rounded-full bg-sageLight text-emeraldDeep text-xs font-bold flex items-center justify-center mb-0 md:mb-2">03</span>
+                            <div>
+                                <h3 class="text-xs font-bold text-emeraldDeep uppercase">Marketing Analytics</h3>
+                                <p class="text-[11px] text-charcoal/60">Acadium</p>
+                            </div>
+                        </div>
+                    </button>
+
+                    <button data-stage="4" class="stage-btn text-left p-4 rounded-xl border border-borderMuted bg-ivoryWarm hover:border-goldChampagne/50 transition-all duration-300">
+                        <div class="flex items-center gap-3 md:block">
+                            <span class="w-8 h-8 rounded-full bg-sageLight text-emeraldDeep text-xs font-bold flex items-center justify-center mb-0 md:mb-2">04</span>
+                            <div>
+                                <h3 class="text-xs font-bold text-emeraldDeep uppercase">Tech Mentorship</h3>
+                                <p class="text-[11px] text-charcoal/60">SEO Mentorship</p>
+                            </div>
+                        </div>
+                    </button>
+
+                    <button data-stage="5" class="stage-btn text-left p-4 rounded-xl border border-borderMuted bg-ivoryWarm hover:border-goldChampagne/50 transition-all duration-300">
+                        <div class="flex items-center gap-3 md:block">
+                            <span class="w-8 h-8 rounded-full bg-sageLight text-emeraldDeep text-xs font-bold flex items-center justify-center mb-0 md:mb-2">05</span>
+                            <div>
+                                <h3 class="text-xs font-bold text-emeraldDeep uppercase">Technical Trainer</h3>
+                                <p class="text-[11px] text-charcoal/60">Genesys Works</p>
+                            </div>
+                        </div>
+                    </button>
+
+                </div>
+            </div>
+
+            <div id="stageDetailCard" class="mt-8 p-8 bg-white rounded-2xl border border-borderMuted shadow-sm transition-all duration-300">
+
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-borderMuted">
+
+                    <div>
+                        <span id="detailBadge" class="px-3 py-1 bg-sageLight text-emeraldDeep text-xs font-semibold rounded-full uppercase">
+                            Full-Time Software Role
+                        </span>
+
+                        <h3 id="detailTitle" class="font-serif text-2xl text-emeraldDeep mt-2 font-bold">
+                            Software Engineer at WEIGHT WATCHERS
+                        </h3>
+                    </div>
+
+                    <div id="detailPeriod" class="text-xs font-semibold text-goldChampagne uppercase tracking-wider bg-emeraldDeep px-4 py-2 rounded-lg shrink-0">
+                        Jun 2021 – Jan 2024
+                    </div>
+
+                </div>
+
+                <p id="detailDesc" class="mt-6 text-charcoal/80 leading-relaxed font-light text-base">
+                    Developed web applications using JavaScript, React, Node.js, REST APIs, HTML, CSS, and PostgreSQL while supporting scalable digital health experiences. Collaborated with product managers, designers, and QA engineers to optimize customer checkout flows, settings, and accessibility across Shopify platforms.
+                </p>
+
+                <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4 pt-4">
+
+                    <div class="p-4 bg-ivoryWarm rounded-xl">
+                        <i class="fa-solid fa-universal-access text-goldChampagne text-sm mb-2"></i>
+                        <h4 class="text-xs font-bold text-emeraldDeep uppercase">Accessibility Leadership</h4>
+                        <p id="bullet1" class="text-xs text-charcoal/70 mt-1">
+                            Resolved 100+ accessibility issues across customer-facing Shopify experiences.
+                        </p>
+                    </div>
+
+                    <div class="p-4 bg-ivoryWarm rounded-xl">
+                        <i class="fa-solid fa-code-branch text-goldChampagne text-sm mb-2"></i>
+                        <h4 class="text-xs font-bold text-emeraldDeep uppercase">Full-Stack Tech Stack</h4>
+                        <p id="bullet2" class="text-xs text-charcoal/70 mt-1">
+                            JavaScript, React, Node.js, REST APIs, PostgreSQL, Docker, AWS, CI/CD.
+                        </p>
+                    </div>
+
+                    <div class="p-4 bg-ivoryWarm rounded-xl">
+                        <i class="fa-solid fa-chart-line text-goldChampagne text-sm mb-2"></i>
+                        <h4 class="text-xs font-bold text-emeraldDeep uppercase">Data & Analytics</h4>
+                        <p id="bullet3" class="text-xs text-charcoal/70 mt-1">
+                            Leveraged Google Analytics to evaluate feature performance and user flows.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section id="experience" class="py-20 px-6 max-w-7xl mx-auto border-b border-borderMuted">
+
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+
+                <div>
+                    <span class="text-xs font-semibold uppercase tracking-widest text-goldChampagne">
+                        Proven Contributions
+                    </span>
+
+                    <h2 class="font-serif text-3xl sm:text-4xl text-emeraldDeep mt-2 font-bold">
+                        Professional Experience
+                    </h2>
+                </div>
+
+                <p class="text-charcoal/70 max-w-md text-sm mt-4 md:mt-0 font-light">
+                    Direct track record in software engineering, agile scrum facilitation, analytics reporting, and technical training.
+                </p>
+
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Genesys Works -->
+                <article class="bg-white rounded-2xl border border-borderMuted overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+
+                    <div>
+                        <div class="h-40 bg-emeraldDeep relative overflow-hidden flex items-center justify-center p-6">
+                            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:16px_16px]"></div>
+
+                            <div class="text-center relative z-10">
+                                <i class="fa-solid fa-chalkboard-user text-goldChampagne text-3xl mb-2"></i>
+                                <div class="text-ivoryWarm font-serif text-lg font-semibold">Genesys Works</div>
+                            </div>
+                        </div>
+
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="px-2.5 py-0.5 rounded-full bg-sageLight text-emeraldDeep text-[10px] font-bold uppercase">
+                                    June 2026 – Present
+                                </span>
+
+                                <span class="text-xs text-charcoal/60 font-semibold">
+                                    New York, NY
+                                </span>
+                            </div>
+
+                            <h3 class="font-serif text-xl text-emeraldDeep font-bold group-hover:text-goldChampagne transition-colors">
+                                Business Technical Trainer
+                            </h3>
+
+                            <p class="text-charcoal/70 text-xs mt-2 font-light line-clamp-3">
+                                Delivering daily technical training sessions for a cohort of 42 Young Professionals, teaching MS Excel fundamentals, professional technology skills, and workplace readiness.
+                            </p>
+
+                            <div class="mt-4 p-3 bg-ivoryWarm rounded-xl border border-goldChampagne/30">
+                                <div class="text-[10px] text-charcoal/60 uppercase font-bold">
+                                    Key Scope
+                                </div>
+
+                                <div class="text-sm font-serif font-bold text-emeraldDeep">
+                                    42 Students • Excel & Analytics
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 pt-0">
+                        <button onclick="openExperienceModal(1)" class="w-full py-3 bg-transparent border border-emeraldDeep text-emeraldDeep rounded-lg text-xs font-bold uppercase tracking-wider hover:bg-emeraldDeep hover:text-ivoryWarm transition-colors flex items-center justify-center gap-2">
+                            <span>View Full Responsibilities</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+
+                </article>
+
+                <!-- Weight Watchers -->
+                <article class="bg-white rounded-2xl border border-borderMuted overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+
+                    <div>
+                        <div class="h-40 bg-emeraldDarker relative overflow-hidden flex items-center justify-center p-6">
+                            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#A3B18A_1px,transparent_1px)] [background-size:16px_16px]"></div>
+
+                            <div class="text-center relative z-10">
+                                <i class="fa-solid fa-code text-goldChampagne text-3xl mb-2"></i>
+                                <div class="text-ivoryWarm font-serif text-lg font-semibold">Weight Watchers</div>
+                            </div>
+                        </div>
+
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="px-2.5 py-0.5 rounded-full bg-sageLight text-emeraldDeep text-[10px] font-bold uppercase">
+                                    Jun 2021 – Jan 2024
+                                </span>
+
+                                <span class="text-xs text-charcoal/60 font-semibold">
+                                    New York, NY
+                                </span>
+                            </div>
+
+                            <h3 class="font-serif text-xl text-emeraldDeep font-bold group-hover:text-goldChampagne transition-colors">
+                                Software Engineer
+                            </h3>
+
+                            <p class="text-charcoal/70 text-xs mt-2 font-light line-clamp-3">
+                                Developed customer-facing web applications using React, Node.js, JavaScript, REST APIs, and PostgreSQL while resolving 100+ accessibility issues.
+                            </p>
+
+                            <div class="mt-4 p-3 bg-ivoryWarm rounded-xl border border-goldChampagne/30">
+                                <div class="text-[10px] text-charcoal/60 uppercase font-bold">
+                                    Key Achievement
+                                </div>
+
+                                <div class="text-sm font-serif font-bold text-emeraldDeep">
+                                    100+ Accessibility Issues Resolved
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 pt-0">
+                        <button onclick="openExperienceModal(2)" class="w-full py-3 bg-transparent border border-emeraldDeep text-emeraldDeep rounded-lg text-xs font-bold uppercase tracking-wider hover:bg-emeraldDeep hover:text-ivoryWarm transition-colors flex items-center justify-center gap-2">
+                            <span>View Full Responsibilities</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+
+                </article>
+
+                <!-- P1Games -->
+                <article class="bg-white rounded-2xl border border-borderMuted overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+
+                    <div>
+                        <div class="h-40 bg-emeraldDeep relative overflow-hidden flex items-center justify-center p-6">
+                            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:16px_16px]"></div>
+
+                            <div class="text-center relative z-10">
+                                <i class="fa-solid fa-diagram-project text-goldChampagne text-3xl mb-2"></i>
+                                <div class="text-ivoryWarm font-serif text-lg font-semibold">P1Games</div>
+                            </div>
+                        </div>
+
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="px-2.5 py-0.5 rounded-full bg-sageLight text-emeraldDeep text-[10px] font-bold uppercase">
+                                    Jun 2024 – Jun 2026
+                                </span>
+
+                                <span class="text-xs text-charcoal/60 font-semibold">
+                                    Freelance
+                                </span>
+                            </div>
+
+                            <h3 class="font-serif text-xl text-emeraldDeep font-bold group-hover:text-goldChampagne transition-colors">
+                                Scrum Master
+                            </h3>
+
+                            <p class="text-charcoal/70 text-xs mt-2 font-light line-clamp-3">
+                                Facilitated Agile ceremonies (sprint planning, daily stand-ups, retrospectives) for an early-stage gaming startup using Jira and Confluence.
+                            </p>
+
+                            <div class="mt-4 p-3 bg-ivoryWarm rounded-xl border border-goldChampagne/30">
+                                <div class="text-[10px] text-charcoal/60 uppercase font-bold">
+                                    Key Focus
+                                </div>
+
+                                <div class="text-sm font-serif font-bold text-emeraldDeep">
+                                    Agile Ceremonies & Delivery Health
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 pt-0">
+                        <button onclick="openExperienceModal(3)" class="w-full py-3 bg-transparent border border-emeraldDeep text-emeraldDeep rounded-lg text-xs font-bold uppercase tracking-wider hover:bg-emeraldDeep hover:text-ivoryWarm transition-colors flex items-center justify-center gap-2">
+                            <span>View Full Responsibilities</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+
+                </article>
+
+                <!-- SEO -->
+                <article class="bg-white rounded-2xl border border-borderMuted overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+
+                    <div>
+                        <div class="h-40 bg-emeraldDarker relative overflow-hidden flex items-center justify-center p-6">
+                            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#A3B18A_1px,transparent_1px)] [background-size:16px_16px]"></div>
+
+                            <div class="text-center relative z-10">
+                                <i class="fa-solid fa-handshake-angle text-goldChampagne text-3xl mb-2"></i>
+                                <div class="text-ivoryWarm font-serif text-lg font-semibold">
+                                    SEO (Sponsors for Educational Opportunity)
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="px-2.5 py-0.5 rounded-full bg-sageLight text-emeraldDeep text-[10px] font-bold uppercase">
+                                    Jan 2025 – Present
+                                </span>
+
+                                <span class="text-xs text-charcoal/60 font-semibold">
+                                    Part-time
+                                </span>
+                            </div>
+
+                            <h3 class="font-serif text-xl text-emeraldDeep font-bold group-hover:text-goldChampagne transition-colors">
+                                Mentor
+                            </h3>
+
+                            <p class="text-charcoal/70 text-xs mt-2 font-light line-clamp-3">
+                                Conducting discovery conversations, supporting technical and behavioral interview preparation, and breaking down complex concepts for early-career professionals.
+                            </p>
+
+                            <div class="mt-4 p-3 bg-ivoryWarm rounded-xl border border-goldChampagne/30">
+                                <div class="text-[10px] text-charcoal/60 uppercase font-bold">
+                                    Key Impact
+                                </div>
+
+                                <div class="text-sm font-serif font-bold text-emeraldDeep">
+                                    Technical & Interview Coaching
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 pt-0">
+                        <button onclick="openExperienceModal(4)" class="w-full py-3 bg-transparent border border-emeraldDeep text-emeraldDeep rounded-lg text-xs font-bold uppercase tracking-wider hover:bg-emeraldDeep hover:text-ivoryWarm transition-colors flex items-center justify-center gap-2">
+                            <span>View Full Responsibilities</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+
+                </article>
+
+                <!-- Acadium -->
+                <article class="bg-white rounded-2xl border border-borderMuted overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+
+                    <div>
+                        <div class="h-40 bg-emeraldDeep relative overflow-hidden flex items-center justify-center p-6">
+                            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:16px_16px]"></div>
+
+                            <div class="text-center relative z-10">
+                                <i class="fa-solid fa-chart-pie text-goldChampagne text-3xl mb-2"></i>
+                                <div class="text-ivoryWarm font-serif text-lg font-semibold">
+                                    Acadium
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="px-2.5 py-0.5 rounded-full bg-sageLight text-emeraldDeep text-[10px] font-bold uppercase">
+                                    Oct 2024 – Dec 2025
+                                </span>
+
+                                <span class="text-xs text-charcoal/60 font-semibold">
+                                    Freelance
+                                </span>
+                            </div>
+
+                            <h3 class="font-serif text-xl text-emeraldDeep font-bold group-hover:text-goldChampagne transition-colors">
+                                Digital Marketing Apprentice
+                            </h3>
+
+                            <p class="text-charcoal/70 text-xs mt-2 font-light line-clamp-3">
+                                Analyzed digital performance data across Google Analytics, LinkedIn Analytics, Instagram Insights, and email metrics to optimize marketing initiatives.
+                            </p>
+
+                            <div class="mt-4 p-3 bg-ivoryWarm rounded-xl border border-goldChampagne/30">
+                                <div class="text-[10px] text-charcoal/60 uppercase font-bold">
+                                    Key Scope
+                                </div>
+
+                                <div class="text-sm font-serif font-bold text-emeraldDeep">
+                                    Multi-Channel Data Analytics
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 pt-0">
+                        <button onclick="openExperienceModal(5)" class="w-full py-3 bg-transparent border border-emeraldDeep text-emeraldDeep rounded-lg text-xs font-bold uppercase tracking-wider hover:bg-emeraldDeep hover:text-ivoryWarm transition-colors flex items-center justify-center gap-2">
+                            <span>View Full Responsibilities</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Core Competencies Section -->
+        <section id="skills" class="py-20 px-6 max-w-7xl mx-auto border-b border-borderMuted">
+
+            <div class="max-w-3xl mb-12">
+
+                <span class="text-xs font-semibold uppercase tracking-widest text-goldChampagne">
+                    Skills & Expertise
+                </span>
+
+                <h2 class="font-serif text-3xl sm:text-4xl text-emeraldDeep mt-2 font-bold">
+                    Core Competencies
+                </h2>
+
+                <p class="text-charcoal/70 mt-2 font-light">
+                    Categorized breakdown of technical languages, data analytics frameworks, agile methodologies, and productivity tools from Rabia's background.
+                </p>
+
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Data & Analytics -->
+                <div class="bg-white p-6 rounded-2xl border border-borderMuted shadow-sm hover:border-goldChampagne/60 transition-all">
+
+                    <div class="w-10 h-10 rounded-xl bg-sageLight flex items-center justify-center text-emeraldDeep mb-4">
+                        <i class="fa-solid fa-chart-line text-lg"></i>
+                    </div>
+
+                    <h3 class="font-serif text-lg text-emeraldDeep font-bold mb-3">
+                        Data & Analytics
+                    </h3>
+
+                    <ul class="space-y-2 text-xs text-charcoal/80 font-light">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-goldChampagne text-[10px]"></i>
+                            Microsoft Excel & SUM/AVERAGE
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-goldChampagne text-[10px]"></i>
+                            Conditional Formatting & Filters
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-goldChampagne text-[10px]"></i>
+                            Google Analytics & LinkedIn Analytics
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-goldChampagne text-[10px]"></i>
+                            KPI Tracking & Performance Reporting
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-goldChampagne text-[10px]"></i>
+                            Dashboard Reporting & Data Validation
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-goldChampagne text-[10px]"></i>
+                            Business Intelligence Fundamentals
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Software & Tech -->
+                <div class="bg-white p-6 rounded-2xl border border-borderMuted shadow-sm hover:border-goldChampagne/60 transition-all">
+
+                    <div class="w-10 h-10 rounded-xl bg-sageLight flex items-center justify-center text-emeraldDeep mb-4">
+                        <i class="fa-solid fa-laptop-code text-lg"></i>
+                    </div>
+
+                    <h3 class="font-serif text-lg text-emeraldDeep font-bold mb-3">
+                        Software & Tech
+                    </h3>
+
+                    <ul class="space-y-2 text-xs text-charcoal/80 font-light">
+
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-goldChampagne text-[10px]"></i>
+                            JavaScript & Node.js
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-goldChampagne text-[10px]"></i>
+                            React & Frontend UI
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-goldChampagne text-[10px]"></i>
+                            REST APIs & PostgreSQL
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-goldChampagne text-[10px]"></i>
+                            SQL & Python (Foundational)
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-goldChampagne text-[10px]"></i>
+                            HTML5 & CSS3 Accessibility
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-goldChampagne text-[10px]"></i>
+                            AWS, Docker, Git, CI/CD
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- Agile -->
+                <div class="bg-white p-6 rounded-2xl border border-borderMuted shadow-sm hover:border-goldChampagne/60 transition-all">
+
+                    <div class="w-10 h-10 rounded-xl bg-sageLight flex items-center justify-center text-emeraldDeep mb-4">
+                        <i class="fa-solid fa-arrows-spin text-lg"></i>
+                    </div>
+
+                    <h3 class="font-serif text-lg text-emeraldDeep font-bold mb-3">
+                        Agile & Delivery
+                    </h3>
+
+                    <ul class="space-y-2 text-xs text-charcoal/80 font-light">
+
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-goldChampagne text-[10px]"></i>
+                            Scrum Master Certification (CSM)
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-goldChampagne text-[10px]"></i>
+                            Sprint Planning & Stand-ups
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-goldChampagne text-[10px]"></i>
+                            Retrospectives & Sprint Metrics
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-goldChampagne text-[10px]"></i>
+                            Requirements & User Stories
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-goldChampagne text-[10px]"></i>
+                            Dependency & Risk Tracking
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-goldChampagne text-[10px]"></i>
+                            Stakeholder Communication
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- Tools -->
+                <div class="bg-white p-6 rounded-2xl border border-borderMuted shadow-sm hover:border-goldChampagne/60 transition-all">
+
+                    <div class="w-10 h-10 rounded-xl bg-sageLight flex items-center justify-center text-emeraldDeep mb-4">
+                        <i class="fa-solid fa-toolbox text-lg"></i>
+                    </div>
+
+                    <h3 class="font-serif text-lg text-emeraldDeep font-bold mb-3">
+                        Tools & Enablement
+                    </h3>
+
+                    <ul class="space-y-2 text-xs text-charcoal/80 font-light">
+
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-goldChampagne text-[10px]"></i>
+                            Jira & Confluence
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-goldChampagne text-[10px]"></i>
+                            Schoology & Microsoft Teams
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-goldChampagne text-[10px]"></i>
+                            Notion, Trello, Asana, ClickUp
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-goldChampagne text-[10px]"></i>
+                            Salesforce & ZoomInfo
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-goldChampagne text-[10px]"></i>
+                            Figma, Miro, Google Workspace
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-goldChampagne text-[10px]"></i>
+                            Technical Training & Coaching
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Education, Certifications & Volunteer Section -->
+        <section id="education" class="py-20 px-6 max-w-7xl mx-auto border-b border-borderMuted">
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+
+                <!-- Education -->
+                <div class="lg:col-span-7 space-y-8">
+
+                    <div>
+                        <span class="text-xs font-semibold uppercase tracking-widest text-goldChampagne">
+                            Academic Background
+                        </span>
+
+                        <h2 class="font-serif text-3xl text-emeraldDeep mt-1 font-bold">
+                            Education & Certifications
+                        </h2>
+                    </div>
+
+                    <div class="space-y-4">
+
+                        <div class="p-5 bg-white rounded-xl border border-borderMuted flex items-start justify-between">
+                            <div>
+                                <h3 class="font-serif text-base font-bold text-emeraldDeep">
+                                    City College of New York
+                                </h3>
+
+                                <p class="text-xs text-charcoal/70 font-medium">
+                                    Bachelor of Business Administration and Management
+                                </p>
+
+                                <span class="text-[11px] text-charcoal/50">
+                                    New York, NY
+                                </span>
+                            </div>
+
+                            <span class="text-xs font-serif font-bold text-emeraldDeep bg-sageLight px-2.5 py-1 rounded">
+                                2023
+                            </span>
+                        </div>
+
+                        <div class="p-5 bg-white rounded-xl border border-borderMuted flex items-start justify-between">
+                            <div>
+                                <h3 class="font-serif text-base font-bold text-emeraldDeep">
+                                    Marcy Lab School
+                                </h3>
+
+                                <p class="text-xs text-charcoal/70 font-medium">
+                                    Software Engineering Fellowship
+                                </p>
+
+                                <span class="text-[11px] text-charcoal/50">
+                                    Brooklyn, NY
+                                </span>
+                            </div>
+
+                            <span class="text-xs font-serif font-bold text-emeraldDeep bg-sageLight px-2.5 py-1 rounded">
+                                2021
+                            </span>
+                        </div>
+
+                        <div class="p-5 bg-white rounded-xl border border-borderMuted flex items-start justify-between">
+                            <div>
+                                <h3 class="font-serif text-base font-bold text-emeraldDeep">
+                                    Borough of Manhattan Community College
+                                </h3>
+
+                                <p class="text-xs text-charcoal/70 font-medium">
+                                    AS Computer Science
+                                </p>
+
+                                <span class="text-[11px] text-charcoal/50">
+                                    New York, NY
+                                </span>
+                            </div>
+
+                            <span class="text-xs font-serif font-bold text-emeraldDeep bg-sageLight px-2.5 py-1 rounded">
+                                2020
+                            </span>
+                        </div>
+
+                        <h3 class="font-serif text-lg font-bold text-emeraldDeep pt-4">
+                            Professional Certifications
+                        </h3>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+
+                            <div class="p-4 bg-emeraldDeep text-ivoryWarm rounded-xl border border-goldChampagne/30 text-center">
+                                <i class="fa-solid fa-award text-goldChampagne text-xl mb-1"></i>
+
+                                <div class="text-xs font-bold text-ivoryWarm">
+                                    Scrum Alliance
+                                </div>
+
+                                <p class="text-[10px] text-sageLight">
+                                    Certified Scrum Master
+                                </p>
+
+                                <span class="text-[10px] text-goldChampagne font-bold block mt-1">
+                                    2023
+                                </span>
+                            </div>
+
+                            <div class="p-4 bg-emeraldDeep text-ivoryWarm rounded-xl border border-goldChampagne/30 text-center">
+                                <i class="fa-solid fa-certificate text-goldChampagne text-xl mb-1"></i>
+
+                                <div class="text-xs font-bold text-ivoryWarm">
+                                    SV Academy
+                                </div>
+
+                                <p class="text-[10px] text-sageLight">
+                                    Sales Development Fundamentals
+                                </p>
+
+                                <span class="text-[10px] text-goldChampagne font-bold block mt-1">
+                                    2026
+                                </span>
+                            </div>
+
+                            <div class="p-4 bg-emeraldDeep text-ivoryWarm rounded-xl border border-goldChampagne/30 text-center">
+                                <i class="fa-solid fa-circle-check text-goldChampagne text-xl mb-1"></i>
+
+                                <div class="text-xs font-bold text-ivoryWarm">
+                                    ZoomInfo
+                                </div>
+
+                                <p class="text-[10px] text-sageLight">
+                                    Certified Professional
+                                </p>
+
+                                <span class="text-[10px] text-goldChampagne font-bold block mt-1">
+                                    2026
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Volunteer Experience -->
+                <div class="lg:col-span-5 space-y-8">
+
+                    <div>
+                        <span class="text-xs font-semibold uppercase tracking-widest text-goldChampagne">
+                            Community Impact
+                        </span>
+
+                        <h2 class="font-serif text-3xl text-emeraldDeep mt-1 font-bold">
+                            Volunteer Experience
+                        </h2>
+                    </div>
+
+                    <div class="space-y-4">
+
+                        <div class="p-6 bg-white rounded-2xl border border-borderMuted space-y-3">
+
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-bold uppercase text-goldChampagne">
+                                    City Tutors
+                                </span>
+
+                                <span class="text-xs text-charcoal/60">
+                                    July 2024 – Present
+                                </span>
+                            </div>
+
+                            <h3 class="font-serif text-lg font-bold text-emeraldDeep">
+                                Mentor (Technical Development & Support)
+                            </h3>
+
+                            <p class="text-xs text-charcoal/70 font-light leading-relaxed">
+                                Providing technical support, study guidance, and technical development mentorship for students in New York, NY.
+                            </p>
+
+                        </div>
+
+                        <div class="p-6 bg-white rounded-2xl border border-borderMuted space-y-3">
+
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-bold uppercase text-goldChampagne">
+                                    Marcy Lab School
+                                </span>
+
+                                <span class="text-xs text-charcoal/60">
+                                    Nov 2022 – Present
+                                </span>
+                            </div>
+
+                            <h3 class="font-serif text-lg font-bold text-emeraldDeep">
+                                Mentor (Software Engineering & Career Growth)
+                            </h3>
+
+                            <p class="text-xs text-charcoal/70 font-light leading-relaxed">
+                                Coaching software engineering fellows in Brooklyn, NY on code architecture, career strategy, and technical growth.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 px-6 max-w-7xl mx-auto">
+
+            <div class="max-w-2xl mx-auto text-center space-y-4">
+
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sageLight text-emeraldDeep text-xs font-bold uppercase">
+                    <span class="w-2 h-2 rounded-full bg-emeraldDeep animate-ping"></span>
+                    Open to Engineering, Agile & Technical Training Opportunities
+                </div>
+
+                <h2 class="font-serif text-3xl sm:text-4xl text-emeraldDeep font-bold">
+                    Let's Connect & Collaborate
+                </h2>
+
+                <p class="text-charcoal/70 text-sm font-light">
+                    Based in New York, NY. Reach out directly for opportunities, discussions, or inquiries.
+                </p>
+
+            </div>
+
+            <div class="max-w-xl mx-auto mt-10 p-8 bg-white rounded-2xl border border-borderMuted shadow-md">
+
+                <form id="contactForm" class="space-y-5">
+
+                    <div>
+                        <label for="userName" class="block text-xs font-bold uppercase text-emeraldDeep mb-2">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="userName"
+                            required
+                            placeholder="e.g. Alex Morgan"
+                            class="w-full px-4 py-3 rounded-lg border border-borderMuted text-sm focus:outline-none focus:border-goldChampagne transition-colors"
+                        >
+                    </div>
+
+                    <div>
+                        <label for="userEmail" class="block text-xs font-bold uppercase text-emeraldDeep mb-2">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="userEmail"
+                            required
+                            placeholder="e.g. alex@company.com"
+                            class="w-full px-4 py-3 rounded-lg border border-borderMuted text-sm focus:outline-none focus:border-goldChampagne transition-colors"
+                        >
+                    </div>
+
+                    <div>
+                        <label for="userMessage" class="block text-xs font-bold uppercase text-emeraldDeep mb-2">
+                            Message or Inquiry
+                        </label>
+
+                        <textarea
+                            id="userMessage"
+                            rows="4"
+                            required
+                            placeholder="Share details about your role, team, or project..."
+                            class="w-full px-4 py-3 rounded-lg border border-borderMuted text-sm focus:outline-none focus:border-goldChampagne transition-colors"
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full py-4 bg-emeraldDeep text-ivoryWarm font-bold text-xs uppercase tracking-widest rounded-lg hover:bg-emeraldDarker transition-colors flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-paper-plane text-goldChampagne"></i>
+                        <span>Send Message</span>
+                    </button>
+
+                </form>
+
+                <div id="formToast" class="hidden mt-4 p-4 bg-emeraldDeep text-ivoryWarm text-xs rounded-lg text-center font-medium border border-goldChampagne/50">
+                    <i class="fa-solid fa-circle-check text-goldChampagne mr-2"></i>
+                    Thank you! Your message has been sent successfully.
+                </div>
+
+            </div>
+
+            <div class="flex flex-wrap justify-center items-center gap-8 mt-12 text-xs font-bold text-emeraldDeep uppercase tracking-wider">
+
+                <a href="mailto:khan.rab34@gmail.com" class="hover:text-goldChampagne transition-colors flex items-center gap-2">
+                    <i class="fa-solid fa-envelope text-sm"></i>
+                    <span>khan.rab34@gmail.com</span>
+                </a>
+
+                <a href="tel:9292728730" class="hover:text-goldChampagne transition-colors flex items-center gap-2">
+                    <i class="fa-solid fa-phone text-sm"></i>
+                    <span>929-272-8730</span>
+                </a>
+
+                <a href="#hero" class="hover:text-goldChampagne transition-colors flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-sm"></i>
+                    <span>New York, NY</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-emeraldDeep text-ivoryWarm py-8 px-6 border-t border-goldChampagne/20">
+
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-light text-ivoryWarm/70">
+
+            <div>
+                © 2026 Rabia Khan. Software Engineer | Certified Scrum Master | Business Technical Trainer.
+            </div>
+
+            <a href="#hero" class="hover:text-goldChampagne transition-colors flex items-center gap-2">
+                <span>Back to Top</span>
+                <i class="fa-solid fa-arrow-up text-goldChampagne"></i>
+            </a>
+
+        </div>
+    </footer>
+
+    <!-- Experience Modal Window -->
+    <div id="experienceModal" class="fixed inset-0 bg-emeraldDeep/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+
+        <div class="bg-ivoryWarm w-full max-w-3xl max-h-[90vh] rounded-2xl overflow-y-auto p-8 border border-goldChampagne/40 shadow-2xl relative">
+
+            <button onclick="closeModal('experienceModal')" class="absolute top-6 right-6 text-emeraldDeep hover:text-goldChampagne text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <span id="expModalCompany" class="text-xs font-bold uppercase tracking-wider text-goldChampagne">
+                Company Name
+            </span>
+
+            <h2 id="expModalTitle" class="font-serif text-2xl sm:text-3xl text-emeraldDeep font-bold mt-1">
+                Role Title
+            </h2>
+
+            <p id="expModalPeriod" class="text-xs text-charcoal/60 font-semibold mt-1">
+                Location • Dates
+            </p>
+
+            <div class="my-6 p-4 bg-sageLight/50 rounded-xl text-xs text-charcoal/80 leading-relaxed font-light" id="expModalOverview">
+                Company overview snippet.
+            </div>
+
+            <div class="space-y-3">
+
+                <h3 class="font-serif text-base font-bold text-emeraldDeep">
+                    Key Responsibilities & Impact
+                </h3>
+
+                <ul id="expModalBullets" class="space-y-2 text-xs text-charcoal/80 font-light list-disc pl-5 leading-relaxed">
+                </ul>
+
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-borderMuted flex justify-end">
+
+                <button onclick="closeModal('experienceModal')" class="px-6 py-2.5 bg-emeraldDeep text-ivoryWarm font-bold text-xs uppercase tracking-wider rounded-lg">
+                    Close Details
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
