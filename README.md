@@ -6,7 +6,7 @@ The portfolio was designed to bring together my technical experience, career pro
 
 ## Live Portfolio
 
-[View My Portfolio](#)
+[[View My Portfolio](https://khanrabia.github.io/GW-BootCamp-PortfolioExample/)](#)
 
 ## About the Project
 
